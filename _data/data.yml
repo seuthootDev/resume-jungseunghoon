@@ -8,70 +8,63 @@ sidebar:
     education: True # set to False if you want education in main section instead of in sidebar
 
     # Profile information
-    name: 박태록(Taerok Park)
+    name: 정승훈(JUNG SEUNGHOON)
     tagline: Backend Developer
     avatar: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
-    email: tetrapod3dev@gmail.com
-    phone: +82 010-2550-5388
+    email: seuthootdev@gmail.com
+    phone: +82 010-5712-5375
     timezone: Asia/Seoul Timezone
     citizenship:
-    website: velog.io/@tetrapod3dev
-    linkedin: taerok-park-952b92215
-    stack-overflow-id: 22925578 
-    stack-overflow-name: Tetrapod 3 Dev # if it is blank, show id
-    github: tetrapod3dev
+    website: seuthootdev.github.io
+    linkedin: 
+    stack-overflow-id:  
+    stack-overflow-name: # if it is blank, show id
+    github: seuthootDev
     # pdf: http://www.africau.edu/images/default/sample.pdf
 
     interests:
       title: Skills
       info:
-        - item: Java, Python
+        - item: Python
 
-        - item: Spring Boot, Spring MVC, Spring Batch, Spring Security
+        - item: Django, Node.js, React
 
-        - item: MySQL, MyBatis
+        - item: MySQL, Mongodb
 
-        - item: JSP, Javascript, HTML5, CSS
+        - item: Javascript, HTML5, CSS
 
-        - item: GCP(GCE, GAE, GKE, Cloud Run, Cloud Function)
+        - item: 
 
 career-profile:
     title: Profile
     summary: |
-      안녕하세요. 저는 개발자 박태록입니다. 스타트업 개발자로 웹 챗봇에 대한 기술에 대해 다양한 경험이 있습니다. 
-      주요 업무는 GCP 플랫폼에서 아키텍처를 구성하며 백엔드 개발을 하는 것 입니다. 새로운 기술에 대한 관심이 많습니다.
+      안녕하세요. 개발자 정승훈입니다. 스타트업 개발자로 소프트웨어 개발에 대한 다양한 경험이 있습니다. 
 
 education:
     title: Education
     info:
-      - degree: SSAFY 3기 수료
-        university: 삼성 청년 SW 아카데미 (SSAFY)
-        time: 2020.01 - 2020.12
+      - degree: 수학과
+        university: 연세대학교 미래캠퍼스
+        time: 2015.03 - 2019.02
         details: |
-          SSAFY에서 1년간의 교육을 통해 Java를 기반으로 실무에 필요한 소프트웨어 개발 능력을 강화했습니다. 
-          다양한 프로젝트와 협업 경험을 통해 실제 업무 환경에서 요구되는 기술적, 협업적 능력을 키웠습니다.
-      - degree: 시스템경영공학과, 컴퓨터공학과 학사
-        university: 성균관대학교
-        time: 2013.03 - 2017.02
-        details: |
-          시스템경영공학과에서 수리 통계, 데이터 마이닝 및 경영공학에 대해 배웠으며 최적화에 대해 깊이있게 다뤘습니다.
+          수학과에서 수리 통계, 대수학 및 에 대해 깊이있게 다뤘습니다.
           컴퓨터공학에서 운영체제, 개발에 대한 전반에 대해 배웠습니다. 
 
 experiences:
     title: Experiences
     info:
-      - role: AI-x Service Developement/ Consultant
-        time: 2020.12 - 현재
-        company: TPCG
+      - role: SoftWere Developement
+        time: 2023.08 - 현재
+        company: (주)헤르스
         details: |
-            - TPCG에서 AI-x 서비스 개발자 및 컨설턴트로 활동
-            - 챗봇 서비스 개발 담당
-            - LLM 챗봇을 위한 아키텍처 연구 및 개발
+            - 
+            - 
+            - 
       - role: 중위
-        time: 2017.03 - 2019.06
-        company: 28사단 정보통신대대
+        time: 2019.03 - 2021.02
+        company: 해병 1사단
         details: |
           ROTC 장교로서의 복무 기간 동안 리더십, 팀 관리, 의사소통 및 위기 관리 능력을 키웠습니다.
 
@@ -79,9 +72,9 @@ certifications:
       title: Certifications
       list:
         - name: 정보처리기사
-          start: 2016
+          start: 2024
           organization: 한국산업인력공단(HRD Korea)
-          credentialid: 16202100712S
+          credentialid: 00000000
 
 projects:
     title: Projects
@@ -90,5 +83,5 @@ projects:
     #   section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     #   Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
     assignments:
-      - title: LG Global CS Chatbot
-        tagline: "2021년 3월부터 2023년 3월까지 LG Global의 고객 센터 챗봇을 17개 나라에 구축 및 유지보수했습니다. 글로벌 법인별 인공지능(A.I) 챗봇을 구축하여 현지 고객 문의 지원, 센터 안내, 상담원 연동 등을 위한 기능 개발했습니다."
+      - title: 환경부 정부 과제(화학안전사고 예방을 위한 감지기 센서 최적화)
+        tagline: ""
