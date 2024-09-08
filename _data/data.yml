@@ -71,10 +71,21 @@ experiences:
 certifications:
       title: Certifications
       list:
+        - name: ADsP
+          start: 2024
+          organization: 한국데이터산업진흥원(K DATA)
+          credentialid: ADsP-042005357
+
+        - name: SQLD
+          start: 2024
+          organization: 한국데이터산업진흥원(K DATA)
+          credentialid: SQLD-00000000
+
         - name: 정보처리기사
           start: 2024
           organization: 한국산업인력공단(HRD Korea)
           credentialid: 00000000
+
 
 projects:
     title: Projects
