@@ -1,14 +1,14 @@
 #Update all the sections by editing the data.yml file inside _data folder.
 
 # Site Settings
-title: "박태록(Taerok Park) | Backend developer"
+title: "정승훈(JUNG SEUNGHOON) | Backend developer"
 url: 'https://tetrapod3dev.github.io'
 
 #change it according to your repository name
 # disabling since we are using a custom domain
 #baseurl: '/online-cv' 
 
-description: 안녕하세요 개발자 박태록입니다.
+description: 안녕하세요 개발자 정승훈입니다.
 # Style will be applied only after restarting the build or serve. Just choose one of the options.
 theme_skin: line # blue turquoise green berry orange ceramic
 chrome_mobile_color: #use hex colors (ex:#1976d2) or leave empty if you don't want a color for chrome mobile searchbar
