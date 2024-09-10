@@ -27,15 +27,15 @@ sidebar:
     interests:
       title: Skills
       info:
-        - item: Python
+        - item: Python, Fortran
+
+        - item: VTK, PyQt
 
         - item: Django, Node.js, React
 
-        - item: MySQL, Mongodb
-
         - item: Javascript, HTML5, CSS
 
-        - item: 
+        - item: MySQL, Mongodb
 
 career-profile:
     title: Profile
@@ -74,17 +74,17 @@ certifications:
         - name: ADsP
           start: 2024
           organization: 한국데이터산업진흥원(K DATA)
-          credentialid: ADsP-042005357
+          credentialid: 042005357
 
         - name: SQLD
           start: 2024
           organization: 한국데이터산업진흥원(K DATA)
-          credentialid: SQLD-00000000
+          credentialid: 00000000
 
         - name: 정보처리기사
           start: 2024
           organization: 한국산업인력공단(HRD Korea)
-          credentialid: 00000000
+          credentialid: 24202010662E
 
 
 projects:
