@@ -9,7 +9,7 @@ sidebar:
 
     # Profile information
     name: 정승훈(JUNG SEUNGHOON)
-    tagline: Backend Developer
+    tagline: Software Developer
     avatar: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
@@ -94,5 +94,5 @@ projects:
     #   section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     #   Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
     assignments:
-      - title: 환경부 정부 과제(화학안전사고 예방을 위한 감지기 센서 최적화)
+      - title: 환경부 정부 과제\n(화학사고 예방관리를 위한 감지경보체계 최적화 예측 및 운영기술 개발)
         tagline: ""
