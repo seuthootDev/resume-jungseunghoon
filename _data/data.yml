@@ -89,6 +89,11 @@ certifications:
           organization: 한국데이터산업진흥원(K DATA)
           credentialid: 042005357
 
+        - name: 리눅스 마스터 2급
+          start: 2024
+          organization: 한국정보통신진흥협회(KAIT)
+          credentialid: 2403-007805
+
 
 projects:
     title: Projects
