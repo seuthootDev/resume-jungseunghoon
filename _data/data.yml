@@ -22,6 +22,7 @@ sidebar:
     stack-overflow-id:  
     stack-overflow-name: # if it is blank, show id
     github: seuthootDev
+    portfolio : portfolio
     # pdf: http://www.africau.edu/images/default/sample.pdf
 
     interests:
