@@ -98,7 +98,11 @@ certifications:
           start: 2024
           organization: 한국정보통신진흥협회(KAIT)
           credentialid: 2403-007805
-
+          
+        - name: AWS Certified Cloud Practitioner
+          start: 2024
+          organization: Amazon Web Services(AWS)
+          credentialid: 0
 
 projects:
     title: Projects
