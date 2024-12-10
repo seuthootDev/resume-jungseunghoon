@@ -102,8 +102,7 @@ certifications:
         - name: AWS Certified Cloud Practitioner
           start: 2024
           organization: Amazon Web Services(AWS)
-          credentialid: 0
-
+          credentialid: b5966...
 projects:
     title: Projects
     # intro: >
