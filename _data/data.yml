@@ -102,7 +102,14 @@ certifications:
         - name: AWS Certified Cloud Practitioner
           start: 2024
           organization: Amazon Web Services(AWS)
-          credentialid: b5966...
+          credentialid: b596609e89fb4a3299efcdb758c5252f
+                      # b596609e89fb4a3299efcdb758c5252f
+                      
+        - name: 네트워크관리사 2급
+          start: 2024
+          organization: 한국정보통신자격협회(ICQA)
+          credentialid: NT2076028
+          
 projects:
     title: Projects
     # intro: >
