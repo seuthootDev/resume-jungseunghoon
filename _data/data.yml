@@ -84,6 +84,18 @@ certifications:
           organization: 한국산업인력공단(HRD Korea)
           credentialid: 24202010662E
 
+        - name: AWS Certified Solutions Architect - Associate
+          start: 2024
+          organization: Amazon Web Services(AWS)
+          credentialid: 83c441e6f7c9486299b711976b4be75a
+                      # 83c441e6f7c9486299b711976b4be75a
+          
+        - name: AWS Certified Cloud Practitioner
+          start: 2024
+          organization: Amazon Web Services(AWS)
+          credentialid: b596609e89fb4a3299efcdb758c5252f
+                      # b596609e89fb4a3299efcdb758c5252f
+                      
         - name: SQLD
           start: 2024
           organization: 한국데이터산업진흥원(K DATA)
@@ -93,29 +105,16 @@ certifications:
           start: 2024
           organization: 한국데이터산업진흥원(K DATA)
           credentialid: 042005357
-
-        - name: 리눅스 마스터 2급
-          start: 2024
-          organization: 한국정보통신진흥협회(KAIT)
-          credentialid: 2403-007805
-
-        - name: AWS Certified Solutions Architect - Associate
-          start: 2024
-          organization: Amazon Web Services(AWS)
-          credentialid: 495524108
-                      # 83c441e6f7c9486299b711976b4be75a
-          
-        - name: AWS Certified Cloud Practitioner
-          start: 2024
-          organization: Amazon Web Services(AWS)
-          credentialid: 492143116
-                      # b596609e89fb4a3299efcdb758c5252f
-                      
                       
         - name: 네트워크 관리사 2급
           start: 2024
           organization: 한국정보통신자격협회(ICQA)
           credentialid: NT2076028
+
+        - name: 리눅스 마스터 2급
+          start: 2024
+          organization: 한국정보통신진흥협회(KAIT)
+          credentialid: 2403-007805
           
 projects:
     title: Projects
