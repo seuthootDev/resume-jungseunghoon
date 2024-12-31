@@ -99,12 +99,12 @@ certifications:
         - name: SQLD
           start: 2024
           organization: 한국데이터산업진흥원(K DATA)
-          credentialid: 054002358
+          credentialid: SQLD-054002358
 
         - name: ADsP
           start: 2024
           organization: 한국데이터산업진흥원(K DATA)
-          credentialid: 042005357
+          credentialid: ADsP-042005357
                       
         - name: 네트워크 관리사 2급
           start: 2024
@@ -114,7 +114,7 @@ certifications:
         - name: 리눅스 마스터 2급
           start: 2024
           organization: 한국정보통신진흥협회(KAIT)
-          credentialid: 2403-007805
+          credentialid: LMS-2403-007805
           
 projects:
     title: Projects
