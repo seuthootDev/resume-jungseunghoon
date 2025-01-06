@@ -27,11 +27,11 @@ sidebar:
     interests:
       title: Skills
       info:
-        - item: Python, Javascript, HTML5, CSS, Fortran
+        - item: Python, Javascript, HTML5, CSS
 
         - item: VTK, PyQt
 
-        - item: Django, Node.js, React
+        - item: Node.js
 
         - item: Ubuntu Linux
 
