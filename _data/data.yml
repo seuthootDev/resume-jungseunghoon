@@ -88,13 +88,16 @@ certifications:
           start: 2024
           organization: Amazon Web Services(AWS)
           credentialid: 83c441e6f7c9486299b711976b4be75a
-                      # 83c441e6f7c9486299b711976b4be75a
+                      
+        - name: AWS Certified Developer - Associate
+          start: 2024
+          organization: Amazon Web Services(AWS)
+          credentialid: c55cfdf3325c43549739f2f9f015ed42
           
         - name: AWS Certified Cloud Practitioner
           start: 2024
           organization: Amazon Web Services(AWS)
           credentialid: b596609e89fb4a3299efcdb758c5252f
-                      # b596609e89fb4a3299efcdb758c5252f
                       
         - name: SQLD
           start: 2024
