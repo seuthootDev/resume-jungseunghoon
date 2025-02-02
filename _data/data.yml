@@ -93,6 +93,11 @@ certifications:
           start: 2024
           organization: Amazon Web Services(AWS)
           credentialid: c55cfdf3325c43549739f2f9f015ed42
+
+        - name: AWS Certified SysOps Administrator - Associate
+          start: 2024
+          organization: Amazon Web Services(AWS)
+          credentialid: 
           
         - name: AWS Certified Cloud Practitioner
           start: 2024
