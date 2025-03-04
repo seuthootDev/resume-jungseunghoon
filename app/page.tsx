@@ -2,13 +2,14 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { Github, Linkedin, Mail, ExternalLink, Download } from "lucide-react"
+import { Github, Linkedin, Mail, ExternalLink } from "lucide-react"
 import { useState } from "react"
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { ThemeToggle } from "@/components/theme-toggle"
 
 export default function Resume() {
   const [showAllCerts, setShowAllCerts] = useState(false)
@@ -29,9 +30,9 @@ export default function Resume() {
             <Link href="#projects" className="text-sm font-medium transition-colors hover:text-primary">
               프로젝트
             </Link>
-            <Link href="#portfolio" className="text-sm font-medium transition-colors hover:text-primary">
+            {/* <Link href="#portfolio" className="text-sm font-medium transition-colors hover:text-primary">
               포트폴리오
-            </Link>
+            </Link> */}
             <Link href="#certifications" className="text-sm font-medium transition-colors hover:text-primary">
               자격증
             </Link>
@@ -39,10 +40,9 @@ export default function Resume() {
               연락처
             </Link>
           </nav>
-          <Button size="sm">
-            <Download className="mr-2 h-4 w-4" />
-            이력서 다운로드
-          </Button>
+          <div className="flex items-center gap-4">
+            <ThemeToggle />
+          </div>
         </div>
       </header>
 
@@ -311,7 +311,7 @@ export default function Resume() {
         </section>
 
         {/* 포트폴리오 섹션 */}
-        <section id="portfolio" className="mb-16">
+        {/* <section id="portfolio" className="mb-16">
           <h2 className="mb-6 text-3xl font-bold">포트폴리오</h2>
           <Tabs defaultValue="all">
             <TabsList className="mb-4">
@@ -331,8 +331,8 @@ export default function Resume() {
                     className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/70 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                    <h3 className="text-lg font-bold text-white">포트폴리오 항목 {i + 1}</h3>
-                    <p className="text-center text-sm text-white/80">간단한 설명이 들어갑니다.</p>
+                    <h3 className="text-lg font-bold text-white">포트폴리오 {i + 1}</h3>
+                    <p className="text-center text-sm text-white/80">준비중</p>
                     <Button asChild variant="secondary" size="sm" className="mt-2">
                       <Link href="#" target="_blank" rel="noopener noreferrer">
                         자세히 보기
@@ -353,8 +353,8 @@ export default function Resume() {
                     className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/70 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                    <h3 className="text-lg font-bold text-white">웹 프로젝트 {i + 1}</h3>
-                    <p className="text-center text-sm text-white/80">웹 프로젝트에 대한 설명입니다.</p>
+                    <h3 className="text-lg font-bold text-white">웹 {i + 1}</h3>
+                    <p className="text-center text-sm text-white/80">준비중</p>
                     <Button asChild variant="secondary" size="sm" className="mt-2">
                       <Link href="#" target="_blank" rel="noopener noreferrer">
                         자세히 보기
@@ -376,7 +376,7 @@ export default function Resume() {
                   />
                   <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/70 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                     <h3 className="text-lg font-bold text-white">데스크톱 앱 {i + 1}</h3>
-                    <p className="text-center text-sm text-white/80">데스크톱 앱에 대한 설명입니다.</p>
+                    <p className="text-center text-sm text-white/80">준비중</p>
                     <Button asChild variant="secondary" size="sm" className="mt-2">
                       <Link href="#" target="_blank" rel="noopener noreferrer">
                         자세히 보기
@@ -397,8 +397,8 @@ export default function Resume() {
                     className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/70 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                    <h3 className="text-lg font-bold text-white">디자인 작업 {i + 1}</h3>
-                    <p className="text-center text-sm text-white/80">디자인 작업에 대한 설명입니다.</p>
+                    <h3 className="text-lg font-bold text-white">디자인 {i + 1}</h3>
+                    <p className="text-center text-sm text-white/80">준비중</p>
                     <Button asChild variant="secondary" size="sm" className="mt-2">
                       <Link href="#" target="_blank" rel="noopener noreferrer">
                         자세히 보기
@@ -409,7 +409,7 @@ export default function Resume() {
               ))}
             </TabsContent>
           </Tabs>
-        </section>
+        </section> */}
 
         {/* 자격증 섹션 */}
         <section id="certifications" className="mb-16">
@@ -439,7 +439,7 @@ export default function Resume() {
             <Card>
               <CardHeader>
                 <CardTitle>AWS Certified Developer - Associate</CardTitle>
-                <CardDescription>Amazon Web Services(AWS) | 2024</CardDescription>
+                <CardDescription>Amazon Web Services(AWS) | 2025</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">자격번호: c55cfdf3325c43549739f2f9f015ed42</p>
@@ -449,7 +449,7 @@ export default function Resume() {
             <Card>
               <CardHeader>
                 <CardTitle>AWS Certified SysOps Administrator - Associate</CardTitle>
-                <CardDescription>Amazon Web Services(AWS) | 2024</CardDescription>
+                <CardDescription>Amazon Web Services(AWS) | 2025</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">자격번호: 9595ba6a839c46a38fc4ec4b54f8ad75</p>

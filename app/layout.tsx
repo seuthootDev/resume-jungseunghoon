@@ -1,9 +1,12 @@
-import type { Metadata } from 'next'
-import './globals.css'
+import { Inter } from "next/font/google"
+import "./globals.css"
+import { ThemeProvider } from "./providers"
 
-export const metadata: Metadata = {
-  title: '정승훈 | 소프트웨어 개발자',
-  description: '정승훈의 개발자 포트폴리오',
+const inter = Inter({ subsets: ["latin"] })
+
+export const metadata = {
+  title: "정승훈 이력서",
+  description: "정승훈의 이력서 웹사이트입니다.",
   icons: {
     icon: [
       { url: '/favicon.ico', type: 'image/x-icon' },
@@ -24,8 +27,17 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="ko">
-      <body>{children}</body>
+    <html lang="ko" suppressHydrationWarning>
+      <body className={inter.className}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   )
 }
