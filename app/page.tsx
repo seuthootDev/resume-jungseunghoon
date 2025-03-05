@@ -231,36 +231,38 @@ export default function Resume() {
             </Card>
             <Card>
               <CardHeader>
-                <CardTitle>준비중</CardTitle>
-                <CardDescription>2025.01 - 2025.02</CardDescription>
+                <CardTitle>AI 리뷰 생성기</CardTitle>
+                <CardDescription>2025.03 - 2025.03</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="aspect-video overflow-hidden rounded-md bg-muted">
                   <Image
-                    src="/placeholder.svg?height=200&width=400"
-                    alt="프로젝트 2 스크린샷"
+                    src="https://raw.githubusercontent.com/seuthootDev/review-generator/main/screenshots/2.png"
+                    alt="AI 리뷰 생성기 스크린샷"
                     width={400}
                     height={200}
                     className="h-full w-full object-cover"
                   />
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  준비중
+                  AI를 활용한 리뷰 자동 생성 웹. 파라미터에 따라 결정되는 프롬프트.
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  {/* <Badge variant="secondary">Next.js</Badge>
+                <Badge variant="secondary">React</Badge>
+                  <Badge variant="secondary">Next.js</Badge>
+                  <Badge variant="secondary">Google Gemini API</Badge>
                   <Badge variant="secondary">Tailwind CSS</Badge>
-                  <Badge variant="secondary">Vercel</Badge> */}
+                  <Badge variant="secondary">Vercel</Badge>
                 </div>
                 <div className="flex gap-2">
                   <Button asChild variant="outline" size="sm">
-                    <Link href="https://github.com/yourusername/project2" target="_blank" rel="noopener noreferrer">
+                    <Link href="https://github.com/seuthootDev/review-generator" target="_blank" rel="noopener noreferrer">
                       <Github className="mr-2 h-4 w-4" />
                       코드
                     </Link>
                   </Button>
                   <Button asChild size="sm">
-                    <Link href="https://project2-demo.com" target="_blank" rel="noopener noreferrer">
+                    <Link href="https://review-generator-nine.vercel.app/" target="_blank" rel="noopener noreferrer">
                       <ExternalLink className="mr-2 h-4 w-4" />
                       데모
                     </Link>
