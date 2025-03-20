@@ -524,6 +524,26 @@ export default function Resume() {
           </div>
         </section>
 
+        {/* 어학성적 섹션 */}
+        <section id="language" className="mb-16">
+          <h2 className="mb-6 text-3xl font-bold">어학성적</h2>
+          <div className="grid gap-4 md:grid-cols-2">
+            <Card>
+              <CardHeader>
+                <CardTitle>OPIc</CardTitle>
+                <CardDescription>American Council on the Teaching of Foreign Languages(ACTFL) | 2025</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-2 text-sm text-muted-foreground">
+                  <p>등급: IH</p>
+                  <p>인증서 번호: BBUL-1R2D-G843-U8TL-F8AD</p>
+                  <p>유효기간: 2025.03.16 - 2027.03.15</p>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
         {/* 추가 섹션: 경력 */}
         <section id="experience" className="mb-16">
           <h2 className="mb-6 text-3xl font-bold">경력</h2>
