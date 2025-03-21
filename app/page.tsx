@@ -295,13 +295,13 @@ export default function Resume() {
                 </div>
                 <div className="flex gap-2">
                   <Button asChild variant="outline" size="sm">
-                    <Link href="https://github.com/yourusername/project3" target="_blank" rel="noopener noreferrer">
+                    <Link href="https://github.com/seuthootDev" target="_blank" rel="noopener noreferrer">
                       <Github className="mr-2 h-4 w-4" />
                       코드
                     </Link>
                   </Button>
                   <Button asChild size="sm">
-                    <Link href="https://project3-demo.com" target="_blank" rel="noopener noreferrer">
+                    <Link href="#" target="_blank" rel="noopener noreferrer">
                       <ExternalLink className="mr-2 h-4 w-4" />
                       데모
                     </Link>
