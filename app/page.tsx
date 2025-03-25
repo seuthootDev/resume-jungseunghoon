@@ -421,7 +421,7 @@ export default function Resume() {
               <Card>
                 <CardHeader>
                   <CardTitle>정보처리기사</CardTitle>
-                  <CardDescription>한국산업인력공단(HRD Korea) | 2024</CardDescription>
+                  <CardDescription>한국산업인력공단(HRD Korea) | 2024.09.10</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground">자격번호: 24202010662E</p>
@@ -431,7 +431,7 @@ export default function Resume() {
             <Card>
               <CardHeader>
                 <CardTitle>AWS Certified Solutions Architect - Associate</CardTitle>
-                <CardDescription>Amazon Web Services(AWS) | 2024</CardDescription>
+                <CardDescription>Amazon Web Services(AWS) | 2024.12.28</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">자격번호: 83c441e6f7c9486299b711976b4be75a</p>
@@ -441,7 +441,7 @@ export default function Resume() {
             <Card>
               <CardHeader>
                 <CardTitle>AWS Certified Developer - Associate</CardTitle>
-                <CardDescription>Amazon Web Services(AWS) | 2025</CardDescription>
+                <CardDescription>Amazon Web Services(AWS) | 2025.01.11</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">자격번호: c55cfdf3325c43549739f2f9f015ed42</p>
@@ -451,7 +451,7 @@ export default function Resume() {
             <Card>
               <CardHeader>
                 <CardTitle>AWS Certified SysOps Administrator - Associate</CardTitle>
-                <CardDescription>Amazon Web Services(AWS) | 2025</CardDescription>
+                <CardDescription>Amazon Web Services(AWS) | 2025.01.31</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">자격번호: 9595ba6a839c46a38fc4ec4b54f8ad75</p>
@@ -461,7 +461,7 @@ export default function Resume() {
               <Card>
                 <CardHeader>
                   <CardTitle>SQLD</CardTitle>
-                  <CardDescription>한국데이터산업진흥원(K DATA) | 2024</CardDescription>
+                  <CardDescription>한국데이터산업진흥원(K DATA) | 2024.09.20</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground">자격번호: SQLD-054002358</p>
@@ -471,7 +471,7 @@ export default function Resume() {
               <Card>
                 <CardHeader>
                   <CardTitle>ADsP</CardTitle>
-                  <CardDescription>한국데이터산업진흥원(K DATA) | 2024</CardDescription>
+                  <CardDescription>한국데이터산업진흥원(K DATA) | 2024.09.06</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground">자격번호: ADsP-042005357</p>
@@ -483,7 +483,7 @@ export default function Resume() {
                   <Card>
                     <CardHeader>
                       <CardTitle>AWS Certified Cloud Practitioner</CardTitle>
-                      <CardDescription>Amazon Web Services(AWS) | 2024</CardDescription>
+                      <CardDescription>Amazon Web Services(AWS) | 2024.11.23</CardDescription>
                     </CardHeader>
                     <CardContent>
                       <p className="text-sm text-muted-foreground">자격번호: b596609e89fb4a3299efcdb758c5252f</p>
@@ -493,7 +493,7 @@ export default function Resume() {
                   <Card>
                     <CardHeader>
                       <CardTitle>네트워크 관리사 2급</CardTitle>
-                      <CardDescription>한국정보통신자격협회(ICQA) | 2024</CardDescription>
+                      <CardDescription>한국정보통신자격협회(ICQA) | 2024.12.10</CardDescription>
                     </CardHeader>
                     <CardContent>
                       <p className="text-sm text-muted-foreground">자격번호: NT2076028</p>
@@ -503,7 +503,7 @@ export default function Resume() {
                   <Card>
                     <CardHeader>
                       <CardTitle>리눅스 마스터 2급</CardTitle>
-                      <CardDescription>한국정보통신진흥협회(KAIT) | 2024</CardDescription>
+                      <CardDescription>한국정보통신진흥협회(KAIT) | 2024.10.04</CardDescription>
                     </CardHeader>
                     <CardContent>
                       <p className="text-sm text-muted-foreground">자격번호: LMS-2403-007805</p>
