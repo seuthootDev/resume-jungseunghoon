@@ -39,6 +39,12 @@ export default function Resume() {
             <Link href="#language" className="text-sm font-medium transition-colors hover:text-primary">
               어학성적
             </Link>
+            <Link href="#experience" className="text-sm font-medium transition-colors hover:text-primary">
+              경력
+            </Link>
+            <Link href="#education" className="text-sm font-medium transition-colors hover:text-primary">
+              교육
+            </Link>
             <Link href="#volunteer" className="text-sm font-medium transition-colors hover:text-primary">
               봉사활동
             </Link>
@@ -550,32 +556,6 @@ export default function Resume() {
           </div>
         </section>
 
-        {/* 봉사활동 섹션 */}
-        <section id="volunteer" className="mb-16">
-          <h2 className="mb-6 text-3xl font-bold">봉사활동</h2>
-          <div className="grid gap-4 md:grid-cols-2">
-            <Card>
-              <CardHeader>
-                <CardTitle>헌혈</CardTitle>
-                <CardDescription>대한적십자사혈액관리본부</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm text-muted-foreground">68회 / 272시간</p>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle>생활지원</CardTitle>
-                <CardDescription>서울특별시립중랑노인전문요양원 등</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm text-muted-foreground">59시간</p>
-                <p className="text-sm text-muted-foreground">식사, 목욕, 세탁, 간병, 미용 지원</p>
-              </CardContent>
-            </Card>
-          </div>
-        </section>
-
         {/* 추가 섹션: 경력 */}
         <section id="experience" className="mb-16">
           <h2 className="mb-6 text-3xl font-bold">경력</h2>
@@ -678,6 +658,32 @@ export default function Resume() {
                 </ul>
               </CardContent>
             </Card> 
+          </div>
+        </section>
+
+        {/* 봉사활동 섹션 */}
+        <section id="volunteer" className="mb-16">
+          <h2 className="mb-6 text-3xl font-bold">봉사활동</h2>
+          <div className="grid gap-4 md:grid-cols-2">
+            <Card>
+              <CardHeader>
+                <CardTitle>헌혈</CardTitle>
+                <CardDescription>대한적십자사혈액관리본부</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground">68회 / 272시간</p>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardHeader>
+                <CardTitle>생활지원</CardTitle>
+                <CardDescription>서울특별시립중랑노인전문요양원 등</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground">59시간</p>
+                <p className="text-sm text-muted-foreground">식사, 목욕, 세탁, 간병, 미용 지원</p>
+              </CardContent>
+            </Card>
           </div>
         </section>
 
