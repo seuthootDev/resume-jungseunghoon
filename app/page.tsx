@@ -36,6 +36,9 @@ export default function Resume() {
             <Link href="#certifications" className="text-sm font-medium transition-colors hover:text-primary">
               자격증
             </Link>
+            <Link href="#language" className="text-sm font-medium transition-colors hover:text-primary">
+              어학성적
+            </Link>
             <Link href="#volunteer" className="text-sm font-medium transition-colors hover:text-primary">
               봉사활동
             </Link>
@@ -527,6 +530,26 @@ export default function Resume() {
           </div>
         </section>
 
+        {/* 어학성적 섹션 */}
+        <section id="language" className="mb-16">
+          <h2 className="mb-6 text-3xl font-bold">어학성적</h2>
+          <div className="grid gap-4 md:grid-cols-2">
+            <Card>
+              <CardHeader>
+                <CardTitle>OPIc</CardTitle>
+                <CardDescription>American Council on the Teaching of Foreign Languages(ACTFL) | 2025</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-2 text-sm text-muted-foreground">
+                  <p>등급: IH</p>
+                  <p>인증서 번호: BBUL-1R2D-G843-U8TL-F8AD</p>
+                  <p>유효기간: 2025.03.16 - 2027.03.15</p>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
         {/* 봉사활동 섹션 */}
         <section id="volunteer" className="mb-16">
           <h2 className="mb-6 text-3xl font-bold">봉사활동</h2>
@@ -553,20 +576,128 @@ export default function Resume() {
           </div>
         </section>
 
-        {/* 어학성적 섹션 */}
-        <section id="language" className="mb-16">
-          <h2 className="mb-6 text-3xl font-bold">어학성적</h2>
-          <div className="grid gap-4 md:grid-cols-2">
+        {/* 프로젝트 섹션 */}
+        <section id="projects" className="mb-16">
+          <h2 className="mb-6 text-3xl font-bold">프로젝트</h2>
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             <Card>
               <CardHeader>
-                <CardTitle>OPIc</CardTitle>
-                <CardDescription>American Council on the Teaching of Foreign Languages(ACTFL) | 2025</CardDescription>
+                <CardTitle>타로 리딩</CardTitle>
+                <CardDescription>2025.02 - 2025.03</CardDescription>
               </CardHeader>
-              <CardContent>
-                <div className="space-y-2 text-sm text-muted-foreground">
-                  <p>등급: IH</p>
-                  <p>인증서 번호: BBUL-1R2D-G843-U8TL-F8AD</p>
-                  <p>유효기간: 2025.03.16 - 2027.03.15</p>
+              <CardContent className="space-y-4">
+                <div className="aspect-video overflow-hidden rounded-md bg-muted">
+                  <Image
+                    src="https://raw.githubusercontent.com/seuthootDev/Tarot-Reading/main/screenshots/2.png"
+                    alt="타로 리딩 스크린샷"
+                    width={400}
+                    height={200}
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+                <p className="text-sm text-muted-foreground">
+                  React와 Next.js를 활용한 타로 리딩 반응형 웹. Google Gemini API를 활용한 타로 카드 해석. SNS 공유 기능 포함.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <Badge variant="secondary">React</Badge>
+                  <Badge variant="secondary">Next.js</Badge>
+                  <Badge variant="secondary">Google Gemini API</Badge>
+                  <Badge variant="secondary">Tailwind CSS</Badge>
+                  <Badge variant="secondary">Vercel</Badge>
+                </div>
+                <div className="flex gap-2">
+                  <Button asChild variant="outline" size="sm">
+                    <Link href="https://github.com/seuthootDev/Tarot-Reading" target="_blank" rel="noopener noreferrer">
+                      <Github className="mr-2 h-4 w-4" />
+                      코드
+                    </Link>
+                  </Button>
+                  <Button asChild size="sm">
+                    <Link href="https://tarot-reading-virid.vercel.app" target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="mr-2 h-4 w-4" />
+                      데모
+                    </Link>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardHeader>
+                <CardTitle>AI 리뷰 생성기</CardTitle>
+                <CardDescription>2025.03 - 2025.03</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="aspect-video overflow-hidden rounded-md bg-muted">
+                  <Image
+                    src="https://raw.githubusercontent.com/seuthootDev/review-generator/main/screenshots/2.png"
+                    alt="AI 리뷰 생성기 스크린샷"
+                    width={400}
+                    height={200}
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+                <p className="text-sm text-muted-foreground">
+                  AI를 활용한 리뷰 자동 생성 웹. 파라미터에 따라 결정되는 프롬프트.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                <Badge variant="secondary">React</Badge>
+                  <Badge variant="secondary">Next.js</Badge>
+                  <Badge variant="secondary">Google Gemini API</Badge>
+                  <Badge variant="secondary">Tailwind CSS</Badge>
+                  <Badge variant="secondary">Vercel</Badge>
+                </div>
+                <div className="flex gap-2">
+                  <Button asChild variant="outline" size="sm">
+                    <Link href="https://github.com/seuthootDev/review-generator" target="_blank" rel="noopener noreferrer">
+                      <Github className="mr-2 h-4 w-4" />
+                      코드
+                    </Link>
+                  </Button>
+                  <Button asChild size="sm">
+                    <Link href="https://review-generator-nine.vercel.app/" target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="mr-2 h-4 w-4" />
+                      데모
+                    </Link>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardHeader>
+                <CardTitle>준비중</CardTitle>
+                <CardDescription>2025.01 - 2025.02</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="aspect-video overflow-hidden rounded-md bg-muted">
+                  <Image
+                    src="/placeholder.svg?height=200&width=400"
+                    alt="프로젝트 3 스크린샷"
+                    width={400}
+                    height={200}
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+                <p className="text-sm text-muted-foreground">
+                  준비중
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {/* <Badge variant="secondary">TypeScript</Badge>
+                  <Badge variant="secondary">React</Badge>
+                  <Badge variant="secondary">Firebase</Badge> */}
+                </div>
+                <div className="flex gap-2">
+                  <Button asChild variant="outline" size="sm">
+                    <Link href="https://github.com/seuthootDev" target="_blank" rel="noopener noreferrer">
+                      <Github className="mr-2 h-4 w-4" />
+                      코드
+                    </Link>
+                  </Button>
+                  <Button asChild size="sm">
+                    <Link href="#" target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="mr-2 h-4 w-4" />
+                      데모
+                    </Link>
+                  </Button>
                 </div>
               </CardContent>
             </Card>
