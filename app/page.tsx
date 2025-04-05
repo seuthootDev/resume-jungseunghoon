@@ -154,8 +154,8 @@ export default function Resume() {
                 <Link href="https://www.mongodb.com/" target="_blank" rel="noopener noreferrer">
                   <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
                 </Link>
-                <Link href="https://firebase.google.com/" target="_blank" rel="noopener noreferrer">
-                  <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" alt="Firebase" />
+                <Link href="https://www.mongodb.com/atlas" target="_blank" rel="noopener noreferrer">
+                  <img src="https://img.shields.io/badge/MongoDB%20Atlas-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB Atlas" />
                 </Link>
                 <Link href="https://www.python.org/" target="_blank" rel="noopener noreferrer">
                   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
