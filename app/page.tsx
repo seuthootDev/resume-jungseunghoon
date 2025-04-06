@@ -241,6 +241,54 @@ export default function Resume() {
                 </div>
               </CardContent>
             </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle>TOEIC 단어장</CardTitle>
+                <CardDescription>2025.03 - 2025.04</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="aspect-video overflow-hidden rounded-md bg-muted">
+                  <Image
+                    src="https://raw.githubusercontent.com/seuthootDev/Toeic-Voca/main/screenshots/1.png"
+                    alt="TOEIC 단어장"
+                    width={400}
+                    height={200}
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+                <p className="text-sm text-muted-foreground">
+                  TOEIC 단어장 웹. 사용자 별 가중치 기반 학습 알고리즘.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <Badge variant="secondary">TypeScript</Badge>
+                  <Badge variant="secondary">React</Badge>
+                  <Badge variant="secondary">Next.js</Badge>
+                  <Badge variant="secondary">MongoDB Atlas</Badge>
+                  <Badge variant="secondary">Tailwind CSS</Badge>
+                  <Badge variant="secondary">Vercel</Badge>
+                  <Badge variant="secondary">Docker</Badge>
+                  <Badge variant="secondary">Nginx</Badge>
+                  <Badge variant="secondary">AWS</Badge>
+                </div>
+                <div className="flex gap-2">
+                  <Button asChild variant="outline" size="sm">
+                    <Link href="https://github.com/seuthootDev/Toeic-Voca" target="_blank" rel="noopener noreferrer">
+                      <Github className="mr-2 h-4 w-4" />
+                      코드
+                    </Link>
+                  </Button>
+                  <Button asChild size="sm">
+                    <Link href="https://toeic-voca.vercel.app" target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="mr-2 h-4 w-4" />
+                      데모
+                    </Link>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+
             <Card>
               <CardHeader>
                 <CardTitle>AI 리뷰 생성기</CardTitle>
@@ -282,45 +330,7 @@ export default function Resume() {
                 </div>
               </CardContent>
             </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle>준비중</CardTitle>
-                <CardDescription>2025.01 - 2025.02</CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <div className="aspect-video overflow-hidden rounded-md bg-muted">
-                  <Image
-                    src="/placeholder.svg?height=200&width=400"
-                    alt="프로젝트 3 스크린샷"
-                    width={400}
-                    height={200}
-                    className="h-full w-full object-cover"
-                  />
-                </div>
-                <p className="text-sm text-muted-foreground">
-                  준비중
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  {/* <Badge variant="secondary">TypeScript</Badge>
-                  <Badge variant="secondary">React</Badge>
-                  <Badge variant="secondary">Firebase</Badge> */}
-                </div>
-                <div className="flex gap-2">
-                  <Button asChild variant="outline" size="sm">
-                    <Link href="https://github.com/seuthootDev" target="_blank" rel="noopener noreferrer">
-                      <Github className="mr-2 h-4 w-4" />
-                      코드
-                    </Link>
-                  </Button>
-                  <Button asChild size="sm">
-                    <Link href="#" target="_blank" rel="noopener noreferrer">
-                      <ExternalLink className="mr-2 h-4 w-4" />
-                      데모
-                    </Link>
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
+            
           </div>
         </section>
 
