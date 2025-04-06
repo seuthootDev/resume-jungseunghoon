@@ -135,9 +135,6 @@ export default function Resume() {
                 <Link href="https://react.dev/" target="_blank" rel="noopener noreferrer">
                   <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
                 </Link>
-                <Link href="https://nextjs.org/" target="_blank" rel="noopener noreferrer">
-                  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js" />
-                </Link>
                 <Link href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer">
                   <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
                 </Link>
@@ -148,8 +145,11 @@ export default function Resume() {
                 <CardTitle>백엔드</CardTitle>
               </CardHeader>
               <CardContent className="flex flex-wrap gap-2">
-                <Link href="https://nodejs.org/" target="_blank" rel="noopener noreferrer">
+                {/* <Link href="https://nodejs.org/" target="_blank" rel="noopener noreferrer">
                   <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js" />
+                </Link> */}
+                <Link href="https://nextjs.org/" target="_blank" rel="noopener noreferrer">
+                  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js" />
                 </Link>
                 <Link href="https://www.mongodb.com/" target="_blank" rel="noopener noreferrer">
                   <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
