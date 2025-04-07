@@ -604,8 +604,8 @@ export default function Resume() {
             <CardHeader>
               <div className="flex flex-col justify-between gap-2 sm:flex-row sm:items-center">
                 <div>
-                  <CardTitle>(주)이브자리</CardTitle>
-                  <CardDescription>주임</CardDescription>
+                  <CardTitle>주임 · 영업관리직</CardTitle>
+                  <CardDescription>(주)이브자리</CardDescription>
                 </div>
                 <Badge variant="outline">2021.05 - 2022.12</Badge>
               </div>
@@ -626,7 +626,7 @@ export default function Resume() {
               <CardHeader>
                 <div className="flex flex-col justify-between gap-2 sm:flex-row sm:items-center">
                   <div>
-                    <CardTitle>중위</CardTitle>
+                    <CardTitle>중위 · 소대장</CardTitle>
                     <CardDescription>해병 1사단</CardDescription>
                   </div>
                   <Badge variant="outline">2019.03 - 2021.02</Badge>
