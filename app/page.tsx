@@ -578,6 +578,13 @@ export default function Resume() {
                     <CardDescription>(주)헤르스</CardDescription>
                   </div>
                   <Badge variant="outline">2023.08 - 현재</Badge>
+                  <a
+                  href="https://seuthootdev.my.canva.site/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button variant="outline" size="sm">포트폴리오</Button>
+                </a>
                 </div>
               </CardHeader>
               <CardContent>
