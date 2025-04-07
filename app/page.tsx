@@ -604,7 +604,7 @@ export default function Resume() {
             <CardHeader>
               <div className="flex flex-col justify-between gap-2 sm:flex-row sm:items-center">
                 <div>
-                  <CardTitle>주임 · 영업관리직</CardTitle>
+                  <CardTitle>주임 · 영업관리자</CardTitle>
                   <CardDescription>(주)이브자리</CardDescription>
                 </div>
                 <Badge variant="outline">2021.05 - 2022.12</Badge>
