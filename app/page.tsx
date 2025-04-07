@@ -578,13 +578,15 @@ export default function Resume() {
                     <CardDescription>(주)헤르스</CardDescription>
                   </div>
                   <Badge variant="outline">2023.08 - 현재</Badge>
-                  <a
-                  href="https://seuthootdev.my.canva.site/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Button variant="outline" size="sm">포트폴리오</Button>
-                </a>
+                </div>
+                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
+                <div className="sm:flex-1" /> {/* 왼쪽 공간 차지 */}
+                  <Button asChild size="sm" className="self-end sm:self-auto">
+                    <Link href="https://seuthootdev.my.canva.site/" target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="mr-2 h-4 w-4" />
+                      포트폴리오
+                    </Link>
+                  </Button>
                 </div>
               </CardHeader>
               <CardContent>
@@ -656,7 +658,7 @@ export default function Resume() {
         {/* 추가 섹션: 교육 */}
         <section id="education" className="mb-16">
           <h2 className="mb-6 text-3xl font-bold">교육</h2>
-          <div className="space-y-6">
+          <div className="grid gap-4 md:grid-cols-2">
             <Card>
               <CardHeader>
                 <div className="flex flex-col justify-between gap-2 sm:flex-row sm:items-center">
@@ -681,7 +683,7 @@ export default function Resume() {
               <CardHeader>
                 <div className="flex flex-col justify-between gap-2 sm:flex-row sm:items-center">
                   <div>
-                    <CardTitle>자바 웹 개발 풀스택 과정</CardTitle>
+                    <CardTitle>자바 웹 개발자 풀스택 과정</CardTitle>
                     <CardDescription>하이미디어 학원 구리캠퍼스</CardDescription>
                   </div>
                   <Badge variant="outline">2023.04 - 2023.08</Badge>
