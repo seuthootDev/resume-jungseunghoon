@@ -10,9 +10,17 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { ThemeToggle } from "@/components/theme-toggle"
+import { useEffect } from "react";
 
 export default function Resume() {
   const [showAllCerts, setShowAllCerts] = useState(false)
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "//cdn.credly.com/assets/utilities/embed.js";
+    script.async = true;
+    document.body.appendChild(script);
+  }, []);
 
   return (
     <div className="min-h-screen bg-background">
@@ -57,6 +65,7 @@ export default function Resume() {
           </div>
         </div>
       </header>
+      
 
       <main className="container py-8">
         {/* 자기소개 섹션 */}
@@ -82,6 +91,11 @@ export default function Resume() {
                 주도적으로 진행하면서, 풀스택 개발 역량을 강화하고 있습니다.
               </p>
             </div>
+            {/* <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="2d5a133e-d61a-40fe-b609-c542a0a1e4d7" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+            <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="723c65a5-d7de-4116-9b7b-03b7d422fc88" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+            <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="de0de245-6f4b-4a15-ae6f-df97cb8b11c5" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+            <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="6096199d-3887-4f7f-bf57-02f8ff2da2f2" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script> */}
+
             <div className="flex flex-wrap gap-2">
               <Button asChild variant="outline" size="sm">
                 <Link href="mailto:seuthootdev@gmail.com">
