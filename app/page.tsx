@@ -601,6 +601,28 @@ export default function Resume() {
             </Card>
 
             <Card>
+            <CardHeader>
+              <div className="flex flex-col justify-between gap-2 sm:flex-row sm:items-center">
+                <div>
+                  <CardTitle>(주)이브자리</CardTitle>
+                  <CardDescription>주임</CardDescription>
+                </div>
+                <Badge variant="outline">2021.05 - 2022.12</Badge>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <ul className="ml-6 list-disc space-y-2 text-sm text-muted-foreground">
+                <li>상품 기획 및 매출 데이터 기반의 영업 전략 수립</li>
+                <li>주요 거래처 응대 및 주문 수주 관리</li>
+                <li>생산 및 물류 일정 조율과 입출고일 공지</li>
+                <li>매출 실적 및 성과보고 자료 작성</li>
+                <li>내부 팀 및 외부 유관부서와의 협업을 통한 업무 효율화</li>
+              </ul>
+            </CardContent>
+          </Card>
+
+
+            <Card>
               <CardHeader>
                 <div className="flex flex-col justify-between gap-2 sm:flex-row sm:items-center">
                   <div>
