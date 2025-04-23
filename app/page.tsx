@@ -2,9 +2,9 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { Github, Linkedin, Mail, ExternalLink } from "lucide-react"
+import { Github, Linkedin,SquareTerminal,BicepsFlexed, Mail, ExternalLink, Code, BookOpen, Award, Briefcase, GraduationCap, Heart, Phone, MapPin, User, FileText, Database, Server, Terminal, Globe, Layers, Cpu, Shield, Book, Trophy, Star, Medal, Brain, Palette, Rocket, Lightbulb, Cloud, Network, Code2, BookOpenText, BookMarked, BookCheck, BookX, BookPlus, BookMinus } from "lucide-react"
 import { useState } from "react"
-
+import * as Icons from "lucide-react";
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -86,8 +86,7 @@ export default function Resume() {
               </p>
 
               <p>
-                개발자로 전향한 후 짧은 기간 동안 AWS 자격증 4개를 포함한 총 9개의 자격증을 취득하며 
-                지속적인 성장을 이어가고 있습니다. 현재는 데스크톱 애플리케이션의 웹 마이그레이션 프로젝트를 
+                개발자로 전향한 후 짧은 기간 동안 총 9개의 자격증을 취득하며 지속적인 성장을 이어가고 있습니다. 현재는 데스크톱 애플리케이션의 웹 마이그레이션 프로젝트를 
                 주도적으로 진행하면서, 풀스택 개발 역량을 강화하고 있습니다.
               </p>
             </div>
@@ -130,9 +129,12 @@ export default function Resume() {
 
         {/* 기술스택 섹션 */}
         <section id="skills" className="mb-16">
-          <h2 className="mb-6 text-3xl font-bold">기술 스택</h2>
+          <div className="flex items-center gap-2 mb-6">
+            <Code className="h-8 w-8 text-primary" />
+            <h2 className="text-3xl font-bold">기술 스택</h2>
+          </div>
           <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
-            <Card>
+            <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
               <CardHeader>
                 <CardTitle>프론트엔드</CardTitle>
               </CardHeader>
@@ -154,7 +156,7 @@ export default function Resume() {
                 </Link>
               </CardContent>
             </Card>
-            <Card>
+            <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
               <CardHeader>
                 <CardTitle>백엔드</CardTitle>
               </CardHeader>
@@ -182,7 +184,7 @@ export default function Resume() {
                 </Link>
               </CardContent>
             </Card>
-            <Card>
+            <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
               <CardHeader>
                 <CardTitle>도구 및 기타</CardTitle>
               </CardHeader>
@@ -212,9 +214,12 @@ export default function Resume() {
 
         {/* 프로젝트 섹션 */}
         <section id="projects" className="mb-16">
-          <h2 className="mb-6 text-3xl font-bold">프로젝트</h2>
+          <div className="flex items-center gap-2 mb-6">
+            <Rocket className="h-8 w-8 text-primary" />
+            <h2 className="text-3xl font-bold">프로젝트</h2>
+          </div>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            <Card>
+            <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
               <CardHeader>
                 <CardTitle>타로 리딩</CardTitle>
                 <CardDescription>2025.02 - 2025.03</CardDescription>
@@ -256,7 +261,7 @@ export default function Resume() {
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
               <CardHeader>
                 <CardTitle>TOEIC 단어장</CardTitle>
                 <CardDescription>2025.03 - 2025.04</CardDescription>
@@ -303,7 +308,7 @@ export default function Resume() {
             </Card>
 
 
-            <Card>
+            <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
               <CardHeader>
                 <CardTitle>AI 리뷰 생성기</CardTitle>
                 <CardDescription>2025.03 - 2025.03</CardDescription>
@@ -451,63 +456,78 @@ export default function Resume() {
 
         {/* 자격증 섹션 */}
         <section id="certifications" className="mb-16">
-          <h2 className="mb-6 text-3xl font-bold">자격증</h2>
+          <div className="flex items-center gap-2 mb-6">
+            <Award className="h-8 w-8 text-primary" />
+            <h2 className="text-3xl font-bold">자격증</h2>
+          </div>
           <div className="space-y-4">
             <div className="grid gap-4 md:grid-cols-2">
-              <Card>
+              <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <CardHeader>
-                  <CardTitle>정보처리기사</CardTitle>
-                  <CardDescription>한국산업인력공단(HRD Korea) | 2024.09.10</CardDescription>
+                  <div className="flex items-center gap-2">
+                    <Cpu className="h-6 w-6 text-primary" />
+                    <CardTitle>정보처리기사</CardTitle>
+                  </div>
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground">자격번호: 24202010662E</p>
                 </CardContent>
               </Card>
 
-            <Card>
-              <CardHeader>
-                <CardTitle>AWS Certified Solutions Architect - Associate</CardTitle>
-                <CardDescription>Amazon Web Services(AWS) | 2024.12.28</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm text-muted-foreground">자격번호: 83c441e6f7c9486299b711976b4be75a</p>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>AWS Certified Developer - Associate</CardTitle>
-                <CardDescription>Amazon Web Services(AWS) | 2025.01.11</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm text-muted-foreground">자격번호: c55cfdf3325c43549739f2f9f015ed42</p>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>AWS Certified SysOps Administrator - Associate</CardTitle>
-                <CardDescription>Amazon Web Services(AWS) | 2025.01.31</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm text-muted-foreground">자격번호: 9595ba6a839c46a38fc4ec4b54f8ad75</p>
-              </CardContent>
-            </Card>
-
-              <Card>
+              <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <CardHeader>
-                  <CardTitle>SQLD</CardTitle>
-                  <CardDescription>한국데이터산업진흥원(K DATA) | 2024.09.20</CardDescription>
+                  <div className="flex items-center gap-2">
+                    <Cloud className="h-6 w-6 text-primary" />
+                    <CardTitle>AWS Certified Solutions Architect - Associate</CardTitle>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-muted-foreground">자격번호: 83c441e6f7c9486299b711976b4be75a</p>
+                </CardContent>
+              </Card>
+
+              <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <CardHeader>
+                  <div className="flex items-center gap-2">
+                    <Cloud className="h-6 w-6 text-primary" />
+                    <CardTitle>AWS Certified Developer - Associate</CardTitle>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-muted-foreground">자격번호: c55cfdf3325c43549739f2f9f015ed42</p>
+                </CardContent>
+              </Card>
+
+              <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <CardHeader>
+                  <div className="flex items-center gap-2">
+                    <Cloud className="h-6 w-6 text-primary" />
+                    <CardTitle>AWS Certified SysOps Administrator - Associate</CardTitle>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-muted-foreground">자격번호: 9595ba6a839c46a38fc4ec4b54f8ad75</p>
+                </CardContent>
+              </Card>
+
+              <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <CardHeader>
+                  <div className="flex items-center gap-2">
+                    <Database className="h-6 w-6 text-primary" />
+                    <CardTitle>SQLD</CardTitle>
+                  </div>
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground">자격번호: SQLD-054002358</p>
                 </CardContent>
               </Card>
 
-              <Card>
+              <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <CardHeader>
-                  <CardTitle>ADsP</CardTitle>
-                  <CardDescription>한국데이터산업진흥원(K DATA) | 2024.09.06</CardDescription>
+                  <div className="flex items-center gap-2">
+                    <Brain className="h-6 w-6 text-primary" />
+                    <CardTitle>ADsP</CardTitle>
+                  </div>
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground">자격번호: ADsP-042005357</p>
@@ -516,30 +536,36 @@ export default function Resume() {
 
               {showAllCerts && (
                 <>
-                  <Card>
+                  <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
                     <CardHeader>
-                      <CardTitle>AWS Certified Cloud Practitioner</CardTitle>
-                      <CardDescription>Amazon Web Services(AWS) | 2024.11.23</CardDescription>
+                      <div className="flex items-center gap-2">
+                        <Cloud className="h-6 w-6 text-primary" />
+                        <CardTitle>AWS Certified Cloud Practitioner</CardTitle>
+                      </div>
                     </CardHeader>
                     <CardContent>
                       <p className="text-sm text-muted-foreground">자격번호: b596609e89fb4a3299efcdb758c5252f</p>
                     </CardContent>
                   </Card>
 
-                  <Card>
+                  <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
                     <CardHeader>
-                      <CardTitle>네트워크 관리사 2급</CardTitle>
-                      <CardDescription>한국정보통신자격협회(ICQA) | 2024.12.10</CardDescription>
+                      <div className="flex items-center gap-2">
+                        <Network className="h-6 w-6 text-primary" />
+                        <CardTitle>네트워크 관리사 2급</CardTitle>
+                      </div>
                     </CardHeader>
                     <CardContent>
                       <p className="text-sm text-muted-foreground">자격번호: NT2076028</p>
                     </CardContent>
                   </Card>
 
-                  <Card>
+                  <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
                     <CardHeader>
-                      <CardTitle>리눅스 마스터 2급</CardTitle>
-                      <CardDescription>한국정보통신진흥협회(KAIT) | 2024.10.04</CardDescription>
+                      <div className="flex items-center gap-2">
+                        <Terminal className="h-6 w-6 text-primary" />
+                        <CardTitle>리눅스마스터 2급</CardTitle>
+                      </div>
                     </CardHeader>
                     <CardContent>
                       <p className="text-sm text-muted-foreground">자격번호: LMS-2403-007805</p>
@@ -562,9 +588,12 @@ export default function Resume() {
 
         {/* 어학성적 섹션 */}
         <section id="language" className="mb-16">
-          <h2 className="mb-6 text-3xl font-bold">어학성적</h2>
+          <div className="flex items-center gap-2 mb-6">
+            <Globe className="h-8 w-8 text-primary" />
+            <h2 className="text-3xl font-bold">어학성적</h2>
+          </div>
           <div className="grid gap-4 md:grid-cols-2">
-            <Card>
+            <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
               <CardHeader>
                 <CardTitle>OPIc</CardTitle>
                 <CardDescription>American Council on the Teaching of Foreign Languages(ACTFL) | 2025</CardDescription>
@@ -582,9 +611,12 @@ export default function Resume() {
 
         {/* 추가 섹션: 경력 */}
         <section id="experience" className="mb-16">
-          <h2 className="mb-6 text-3xl font-bold">경력</h2>
+          <div className="flex items-center gap-2 mb-6">
+            <Briefcase className="h-8 w-8 text-primary" />
+            <h2 className="text-3xl font-bold">경력</h2>
+          </div>
           <div className="space-y-6">
-            <Card>
+            <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
               <CardHeader>
                 <div className="flex flex-col justify-between gap-2 sm:flex-row sm:items-center">
                   <div>
@@ -623,7 +655,7 @@ export default function Resume() {
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
             <CardHeader>
               <div className="flex flex-col justify-between gap-2 sm:flex-row sm:items-center">
                 <div>
@@ -645,7 +677,7 @@ export default function Resume() {
           </Card>
 
 
-            <Card>
+            <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
               <CardHeader>
                 <div className="flex flex-col justify-between gap-2 sm:flex-row sm:items-center">
                   <div>
@@ -671,9 +703,12 @@ export default function Resume() {
 
         {/* 추가 섹션: 교육 */}
         <section id="education" className="mb-16">
-          <h2 className="mb-6 text-3xl font-bold">교육</h2>
+          <div className="flex items-center gap-2 mb-6">
+            <GraduationCap className="h-8 w-8 text-primary" />
+            <h2 className="text-3xl font-bold">교육</h2>
+          </div>
           <div className="grid gap-4 md:grid-cols-2">
-            <Card>
+            <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
               <CardHeader>
                 <div className="flex flex-col justify-between gap-2 sm:flex-row sm:items-center">
                   <div>
@@ -693,7 +728,7 @@ export default function Resume() {
               </CardContent>
             </Card>
 
-             <Card>
+             <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
               <CardHeader>
                 <div className="flex flex-col justify-between gap-2 sm:flex-row sm:items-center">
                   <div>
@@ -718,9 +753,12 @@ export default function Resume() {
 
         {/* 봉사활동 섹션 */}
         <section id="volunteer" className="mb-16">
-          <h2 className="mb-6 text-3xl font-bold">봉사활동</h2>
+          <div className="flex items-center gap-2 mb-6">
+            <Heart className="h-8 w-8 text-primary" />
+            <h2 className="text-3xl font-bold">봉사활동</h2>
+          </div>
           <div className="grid gap-4 md:grid-cols-2">
-            <Card>
+            <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
               <CardHeader>
                 <CardTitle>헌혈</CardTitle>
                 <CardDescription>대한적십자사혈액관리본부</CardDescription>
@@ -729,7 +767,7 @@ export default function Resume() {
                 <p className="text-sm text-muted-foreground">68회 / 272시간</p>
               </CardContent>
             </Card>
-            <Card>
+            <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
               <CardHeader>
                 <CardTitle>생활지원</CardTitle>
                 <CardDescription>서울특별시립중랑노인전문요양원 등</CardDescription>
@@ -744,18 +782,22 @@ export default function Resume() {
 
         {/* 연락처 섹션 */}
         <section id="contact" className="mb-16">
-          <h2 className="mb-6 text-3xl font-bold">연락처</h2>
+          <div className="flex items-center gap-2 mb-6">
+            <Phone className="h-8 w-8 text-primary" />
+            <h2 className="text-3xl font-bold">연락처</h2>
+          </div>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-            <Card className="flex flex-col items-center p-6 text-center">
+            <Card className="flex flex-col items-center p-6 text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
               <Mail className="mb-4 h-10 w-10 text-primary" />
               <CardTitle className="text-lg">이메일</CardTitle>
               <CardDescription className="mt-2">
                 <Link href="mailto:seuthootdev@gmail.com" className="hover:underline">
-                seuthootdev@gmail.com
+                  seuthootdev@gmail.com
                 </Link>
               </CardDescription>
             </Card>
-            <Card className="flex flex-col items-center p-6 text-center">
+
+            <Card className="flex flex-col items-center p-6 text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
               <Github className="mb-4 h-10 w-10 text-primary" />
               <CardTitle className="text-lg">GitHub</CardTitle>
               <CardDescription className="mt-2">
@@ -769,12 +811,13 @@ export default function Resume() {
                 </Link>
               </CardDescription>
             </Card>
-            <Card className="flex flex-col items-center p-6 text-center">
+
+            <Card className="flex flex-col items-center p-6 text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
               <Linkedin className="mb-4 h-10 w-10 text-primary" />
               <CardTitle className="text-lg">LinkedIn</CardTitle>
               <CardDescription className="mt-2">
                 <Link
-                  href="www.linkedin.com/in/seunghoon-jung-38b270335"
+                  href="https://linkedin.com/in/seunghoon-jung-38b270335"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:underline"
@@ -783,7 +826,8 @@ export default function Resume() {
                 </Link>
               </CardDescription>
             </Card>
-            <Card className="flex flex-col items-center p-6 text-center">
+
+            <Card className="flex flex-col items-center p-6 text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
               <ExternalLink className="mb-4 h-10 w-10 text-primary" />
               <CardTitle className="text-lg">블로그</CardTitle>
               <CardDescription className="mt-2">
