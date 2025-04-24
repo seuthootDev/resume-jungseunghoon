@@ -470,6 +470,7 @@ export default function Resume() {
                   </div>
                 </CardHeader>
                 <CardContent>
+                  <p className="text-sm text-muted-foreground">한국산업인력공단(HRD Korea) | 2024.09.10</p>
                   <p className="text-sm text-muted-foreground">자격번호: 24202010662E</p>
                 </CardContent>
               </Card>
@@ -482,6 +483,7 @@ export default function Resume() {
                   </div>
                 </CardHeader>
                 <CardContent>
+                  <p className="text-sm text-muted-foreground">Amazon Web Services(AWS) | 2024.12.28</p>
                   <p className="text-sm text-muted-foreground">자격번호: 83c441e6f7c9486299b711976b4be75a</p>
                 </CardContent>
               </Card>
@@ -494,6 +496,7 @@ export default function Resume() {
                   </div>
                 </CardHeader>
                 <CardContent>
+                  <p className="text-sm text-muted-foreground">Amazon Web Services(AWS) | 2025.01.11</p>
                   <p className="text-sm text-muted-foreground">자격번호: c55cfdf3325c43549739f2f9f015ed42</p>
                 </CardContent>
               </Card>
@@ -506,6 +509,7 @@ export default function Resume() {
                   </div>
                 </CardHeader>
                 <CardContent>
+                  <p className="text-sm text-muted-foreground">Amazon Web Services(AWS) | 2025.01.31</p>
                   <p className="text-sm text-muted-foreground">자격번호: 9595ba6a839c46a38fc4ec4b54f8ad75</p>
                 </CardContent>
               </Card>
@@ -518,6 +522,7 @@ export default function Resume() {
                   </div>
                 </CardHeader>
                 <CardContent>
+                  <p className="text-sm text-muted-foreground">한국데이터산업진흥원(K DATA) | 2024.09.20</p>
                   <p className="text-sm text-muted-foreground">자격번호: SQLD-054002358</p>
                 </CardContent>
               </Card>
@@ -530,6 +535,7 @@ export default function Resume() {
                   </div>
                 </CardHeader>
                 <CardContent>
+                  <p className="text-sm text-muted-foreground">한국데이터산업진흥원(K DATA) | 2024.09.06</p>
                   <p className="text-sm text-muted-foreground">자격번호: ADsP-042005357</p>
                 </CardContent>
               </Card>
@@ -544,6 +550,7 @@ export default function Resume() {
                       </div>
                     </CardHeader>
                     <CardContent>
+                      <p className="text-sm text-muted-foreground">Amazon Web Services(AWS) | 2024.11.23</p>
                       <p className="text-sm text-muted-foreground">자격번호: b596609e89fb4a3299efcdb758c5252f</p>
                     </CardContent>
                   </Card>
@@ -556,6 +563,7 @@ export default function Resume() {
                       </div>
                     </CardHeader>
                     <CardContent>
+                      <p className="text-sm text-muted-foreground">한국정보통신자격협회(ICQA) | 2024.12.10</p>
                       <p className="text-sm text-muted-foreground">자격번호: NT2076028</p>
                     </CardContent>
                   </Card>
@@ -568,6 +576,7 @@ export default function Resume() {
                       </div>
                     </CardHeader>
                     <CardContent>
+                      <p className="text-sm text-muted-foreground">한국정보통신진흥협회(KAIT) | 2024.10.04</p>
                       <p className="text-sm text-muted-foreground">자격번호: LMS-2403-007805</p>
                     </CardContent>
                   </Card>
