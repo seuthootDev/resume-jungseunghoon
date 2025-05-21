@@ -11,6 +11,84 @@ import { Badge } from "@/components/ui/badge"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { useEffect } from "react";
+import * as React from "react";
+
+interface AccordionProps {
+  type?: "single" | "multiple";
+  collapsible?: boolean;
+  children: React.ReactNode;
+  className?: string;
+}
+
+interface AccordionItemProps {
+  value: string;
+  children: React.ReactNode;
+  isOpen?: boolean;
+  onToggle?: () => void;
+}
+
+interface AccordionTriggerProps {
+  children: React.ReactNode;
+  onClick?: () => void;
+}
+
+interface AccordionContentProps {
+  children: React.ReactNode;
+}
+
+type AccordionItemElement = React.ReactElement<AccordionItemProps>;
+type AccordionTriggerElement = React.ReactElement<AccordionTriggerProps>;
+type AccordionContentElement = React.ReactElement<AccordionContentProps>;
+
+// Accordion 컴포넌트 정의
+const Accordion: React.FC<AccordionProps> = ({ type = "single", collapsible = true, children, className }) => {
+  const [openItem, setOpenItem] = useState<string | null>(null);
+  const toggleItem = (value: string) => {
+    if (openItem === value && collapsible) {
+      setOpenItem(null);
+    } else {
+      setOpenItem(value);
+    }
+  };
+  return (
+    <div className={className}>
+      {React.Children.map(children, child => {
+        if (React.isValidElement(child) && child.type === AccordionItem) {
+          return React.cloneElement(child as AccordionItemElement, {
+            isOpen: openItem === child.props.value,
+            onToggle: () => toggleItem(child.props.value)
+          });
+        }
+        return child;
+      })}
+    </div>
+  );
+};
+
+const AccordionItem: React.FC<AccordionItemProps> = ({ value, children, isOpen, onToggle }) => (
+  <div className="border-b">
+    {React.Children.map(children, child => {
+      if (React.isValidElement(child) && child.type === AccordionTrigger) {
+        return React.cloneElement(child as AccordionTriggerElement, { onClick: onToggle });
+      }
+      if (React.isValidElement(child) && child.type === AccordionContent) {
+        return isOpen ? child : null;
+      }
+      return child;
+    })}
+  </div>
+);
+
+const AccordionTrigger: React.FC<AccordionTriggerProps> = ({ children, onClick }) => (
+  <button className="flex w-full items-center justify-between py-4 font-medium transition-all hover:underline [&[data-state=open]>svg]:rotate-180" onClick={onClick}>
+    {children}
+    <svg className="h-4 w-4 shrink-0 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
+  </button>
+);
+
+const AccordionContent: React.FC<AccordionContentProps> = ({ children }) => (
+  <div className="pb-4 pt-0 text-sm">{children}</div>
+);
 
 export default function Resume() {
   const [showAllCerts, setShowAllCerts] = useState(false)
@@ -661,6 +739,29 @@ export default function Resume() {
                   <li>FORTRAN으로 작성된 SLAB 유체 확산 모델을 Python으로 마이그레이션 및 현대화</li>
                   <li>Camunda를 활용한 워크플로우 자동화 시스템 구현</li>
                 </ul>
+
+                {/* 프로젝트 세부 내용 - 아코디언 형식 */}
+                <Accordion type="single" collapsible className="w-full mt-4">
+                  <AccordionItem value="item-1">
+                    <AccordionTrigger>
+                      <span className="font-semibold text-base text-gray-800">
+                        프로젝트 : 화학사고 예방관리를 위한 감지경보체계 최적화 예측 및 운영기술 개발
+                      </span>
+                    </AccordionTrigger>
+                    <AccordionContent>
+                      <div className="ml-4 space-y-2 text-sm text-muted-foreground">
+                        <p><span className="font-medium text-gray-700">역할:</span> 통합 프로그램 개발</p>
+                        <p><span className="font-medium text-gray-700">내용:</span></p>
+                        <ul className="ml-6 list-disc space-y-1">
+                          <li>CFD 시뮬레이션 결과를 처리하고 시각화할 수 있는 3D GUI 애플리케이션 설계 및 개발</li>
+                          <li>모듈화된 워크플로우 시스템을 도입하여 사용자가 필요한 기능만 선택하여 사용할 수 있도록 구현</li>
+                          <li>유체 확산 시나리오 기반 감지기 배치 최적화 알고리즘 적용 및 검증 시스템 구축</li>
+                          <li>스탠드얼론과 웹 버전 동시 개발</li>
+                        </ul>
+                      </div>
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
               </CardContent>
             </Card>
 
