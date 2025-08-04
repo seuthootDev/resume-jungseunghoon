@@ -116,9 +116,6 @@ export default function Resume() {
             <Link href="#projects" className="text-sm font-medium transition-colors hover:text-primary">
               프로젝트
             </Link>
-            {/* <Link href="#portfolio" className="text-sm font-medium transition-colors hover:text-primary">
-              포트폴리오
-            </Link> */}
             <Link href="#certifications" className="text-sm font-medium transition-colors hover:text-primary">
               자격증
             </Link>
@@ -168,11 +165,6 @@ export default function Resume() {
                 주도적으로 진행하면서, 풀스택 개발 역량을 강화하고 있습니다.
               </p>
             </div>
-            {/* <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="2d5a133e-d61a-40fe-b609-c542a0a1e4d7" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-            <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="723c65a5-d7de-4116-9b7b-03b7d422fc88" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-            <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="de0de245-6f4b-4a15-ae6f-df97cb8b11c5" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-            <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="6096199d-3887-4f7f-bf57-02f8ff2da2f2" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script> */}
-
             <div className="flex flex-wrap gap-2">
               <Button asChild variant="outline" size="sm">
                 <Link href="mailto:seuthootdev@gmail.com">
@@ -421,112 +413,9 @@ export default function Resume() {
                 </div>
               </CardContent>
             </Card>
-            
           </div>
         </section>
 
-        {/* 포트폴리오 섹션 */}
-        {/* <section id="portfolio" className="mb-16">
-          <h2 className="mb-6 text-3xl font-bold">포트폴리오</h2>
-          <Tabs defaultValue="all">
-            <TabsList className="mb-4">
-              <TabsTrigger value="all">전체</TabsTrigger>
-              <TabsTrigger value="web">웹</TabsTrigger>
-              <TabsTrigger value="desktop">데스크톱</TabsTrigger>
-              <TabsTrigger value="design">디자인</TabsTrigger>
-            </TabsList>
-            <TabsContent value="all" className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
-              {Array.from({ length: 6 }).map((_, i) => (
-                <div key={i} className="group relative aspect-square overflow-hidden rounded-md bg-muted">
-                  <Image
-                    src={`/placeholder.svg?height=300&width=300&text=Portfolio+${i + 1}`}
-                    alt={`포트폴리오 항목 ${i + 1}`}
-                    width={300}
-                    height={300}
-                    className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/70 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                    <h3 className="text-lg font-bold text-white">포트폴리오 {i + 1}</h3>
-                    <p className="text-center text-sm text-white/80">준비중</p>
-                    <Button asChild variant="secondary" size="sm" className="mt-2">
-                      <Link href="#" target="_blank" rel="noopener noreferrer">
-                        자세히 보기
-                      </Link>
-                    </Button>
-                  </div>
-                </div>
-              ))}
-            </TabsContent>
-            <TabsContent value="web" className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
-              {Array.from({ length: 3 }).map((_, i) => (
-                <div key={i} className="group relative aspect-square overflow-hidden rounded-md bg-muted">
-                  <Image
-                    src={`/placeholder.svg?height=300&width=300&text=Web+${i + 1}`}
-                    alt={`웹 포트폴리오 항목 ${i + 1}`}
-                    width={300}
-                    height={300}
-                    className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/70 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                    <h3 className="text-lg font-bold text-white">웹 {i + 1}</h3>
-                    <p className="text-center text-sm text-white/80">준비중</p>
-                    <Button asChild variant="secondary" size="sm" className="mt-2">
-                      <Link href="#" target="_blank" rel="noopener noreferrer">
-                        자세히 보기
-                      </Link>
-                    </Button>
-                  </div>
-                </div>
-              ))}
-            </TabsContent>
-            <TabsContent value="desktop" className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
-              {Array.from({ length: 2 }).map((_, i) => (
-                <div key={i} className="group relative aspect-square overflow-hidden rounded-md bg-muted">
-                  <Image
-                    src={`/placeholder.svg?height=300&width=300&text=Desktop+${i + 1}`}
-                    alt={`데스크톱 포트폴리오 항목 ${i + 1}`}
-                    width={300}
-                    height={300}
-                    className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/70 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                    <h3 className="text-lg font-bold text-white">데스크톱 앱 {i + 1}</h3>
-                    <p className="text-center text-sm text-white/80">준비중</p>
-                    <Button asChild variant="secondary" size="sm" className="mt-2">
-                      <Link href="#" target="_blank" rel="noopener noreferrer">
-                        자세히 보기
-                      </Link>
-                    </Button>
-                  </div>
-                </div>
-              ))}
-            </TabsContent>
-            <TabsContent value="design" className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
-              {Array.from({ length: 1 }).map((_, i) => (
-                <div key={i} className="group relative aspect-square overflow-hidden rounded-md bg-muted">
-                  <Image
-                    src={`/placeholder.svg?height=300&width=300&text=Design+${i + 1}`}
-                    alt={`디자인 포트폴리오 항목 ${i + 1}`}
-                    width={300}
-                    height={300}
-                    className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/70 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                    <h3 className="text-lg font-bold text-white">디자인 {i + 1}</h3>
-                    <p className="text-center text-sm text-white/80">준비중</p>
-                    <Button asChild variant="secondary" size="sm" className="mt-2">
-                      <Link href="#" target="_blank" rel="noopener noreferrer">
-                        자세히 보기
-                      </Link>
-                    </Button>
-                  </div>
-                </div>
-              ))}
-            </TabsContent>
-          </Tabs>
-        </section> */}
-
-        {/* 자격증 섹션 */}
         <section id="certifications" className="mb-16">
           <div className="flex items-center gap-2 mb-6">
             <Award className="h-8 w-8 text-primary" />
