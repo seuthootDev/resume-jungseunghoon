@@ -598,7 +598,7 @@ export default function Resume() {
                 <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
                 <div className="sm:flex-1" /> {/* 왼쪽 공간 차지 */}
                   <Button asChild size="sm" className="self-end sm:self-auto">
-                    <Link href="https://seuthootdev.my.canva.site/" target="_blank" rel="noopener noreferrer">
+                    <Link href="https://portfolio-uyt7.vercel.app/" target="_blank" rel="noopener noreferrer">
                       <ExternalLink className="mr-2 h-4 w-4" />
                       포트폴리오
                     </Link>
