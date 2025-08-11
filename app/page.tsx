@@ -755,7 +755,7 @@ export default function Resume() {
               </CardContent>
             </Card>
 
-             <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
+{/*              <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
               <CardHeader>
                 <div className="flex flex-col justify-between gap-2 sm:flex-row sm:items-center">
                   <div>
@@ -774,7 +774,7 @@ export default function Resume() {
                   <li>팀 프로젝트 수행을 통한 실전 경험 습득</li>
                 </ul>
               </CardContent>
-            </Card> 
+            </Card>  */}
           </div>
         </section>
 
