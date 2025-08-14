@@ -596,7 +596,10 @@ export default function Resume() {
                <CardHeader>
                 <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
                   <div>
-                    <CardTitle>소프트웨어 개발자<Button
+                    <CardTitle>소프트웨어 개발자</CardTitle>
+                    <CardDescription>(주)헤르스</CardDescription>
+                  </div>
+                  <Button
                     asChild
                     size="lg"
                     className="w-1/4 bg-gradient-to-r from-blue-500 via-blue-600 to-indigo-600 text-white font-bold shadow-lg hover:scale-[1.02] hover:shadow-xl transition-all duration-300"
@@ -605,9 +608,7 @@ export default function Resume() {
                       <ExternalLink className="mr-2 h-5 w-5 animate-bounce" />
                       포트폴리오 보러가기
                     </Link>
-                  </Button></CardTitle>
-                    <CardDescription>(주)헤르스</CardDescription>
-                  </div>
+                  </Button>
                   <Badge variant="outline">2023.08 - 현재</Badge>
                 </div>
 {/*                 <div className="w-full mt-4 flex justify-end">
