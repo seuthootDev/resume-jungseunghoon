@@ -596,12 +596,21 @@ export default function Resume() {
                <CardHeader>
                 <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
                   <div>
-                    <CardTitle>소프트웨어 개발자</CardTitle>
+                    <CardTitle>소프트웨어 개발자<Button
+                    asChild
+                    size="lg"
+                    className="w-1/4 bg-gradient-to-r from-blue-500 via-blue-600 to-indigo-600 text-white font-bold shadow-lg hover:scale-[1.02] hover:shadow-xl transition-all duration-300"
+                  >
+                    <Link href="https://portfolio-uyt7.vercel.app/" target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="mr-2 h-5 w-5 animate-bounce" />
+                      포트폴리오 보러가기
+                    </Link>
+                  </Button></CardTitle>
                     <CardDescription>(주)헤르스</CardDescription>
                   </div>
                   <Badge variant="outline">2023.08 - 현재</Badge>
                 </div>
-                <div className="w-full mt-4 flex justify-end">
+{/*                 <div className="w-full mt-4 flex justify-end">
                   <Button
                     asChild
                     size="lg"
@@ -612,7 +621,7 @@ export default function Resume() {
                       포트폴리오 보러가기
                     </Link>
                   </Button>
-                </div>
+                </div> */}
               </CardHeader>
               <CardContent>
                 <ul className="ml-6 list-disc space-y-2 text-sm text-muted-foreground">
