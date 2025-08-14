@@ -593,27 +593,27 @@ export default function Resume() {
           </div>
           <div className="space-y-6">
             <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <CardHeader>
-                <div className="flex flex-col justify-between gap-2 sm:flex-row sm:items-center">
+               <CardHeader>
+                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
                   <div>
                     <CardTitle>소프트웨어 개발자</CardTitle>
                     <CardDescription>(주)헤르스</CardDescription>
                   </div>
                   <Badge variant="outline">2023.08 - 현재</Badge>
                 </div>
-                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
+              
                 <div className="w-full mt-4">
-                <Button
-                  asChild
-                  size="lg"
-                  className="w-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-white font-bold shadow-lg hover:scale-[1.02] hover:shadow-xl transition-all duration-300"
-                >
-                  <Link href="https://portfolio-uyt7.vercel.app/" target="_blank" rel="noopener noreferrer">
-                    <ExternalLink className="mr-2 h-5 w-5 animate-bounce" />
-                    포트폴리오 전체 보기
-                  </Link>
-                </Button>
-              </div>
+                  <Button
+                    asChild
+                    size="lg"
+                    className="w-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-white font-bold shadow-lg hover:scale-[1.02] hover:shadow-xl transition-all duration-300"
+                  >
+                    <Link href="https://portfolio-uyt7.vercel.app/" target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="mr-2 h-5 w-5 animate-bounce" />
+                      포트폴리오 보러가기
+                    </Link>
+                  </Button>
+                </div>
               </CardHeader>
               <CardContent>
                 <ul className="ml-6 list-disc space-y-2 text-sm text-muted-foreground">
