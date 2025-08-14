@@ -606,7 +606,7 @@ export default function Resume() {
                   <Button
                     asChild
                     size="lg"
-                    className="w-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-white font-bold shadow-lg hover:scale-[1.02] hover:shadow-xl transition-all duration-300"
+                    className="w-full bg-gradient-to-r from-blue-500 via-blue-600 to-indigo-600 text-white font-bold shadow-lg hover:scale-[1.02] hover:shadow-xl transition-all duration-300"
                   >
                     <Link href="https://portfolio-uyt7.vercel.app/" target="_blank" rel="noopener noreferrer">
                       <ExternalLink className="mr-2 h-5 w-5 animate-bounce" />
