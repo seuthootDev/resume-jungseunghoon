@@ -613,6 +613,69 @@ export default function Resume() {
                       포트폴리오 보러가기
                     </Link>
                   </Button>
+
+                  <Button
+                  asChild
+                  size="lg"
+                  className="w-full text-white font-bold shadow-lg hover:scale-105 hover:shadow-2xl transition-all duration-300"
+                  style={{
+                    background: 'linear-gradient(45deg, #3b82f6, #2563eb, #1e40af)',
+                    clipPath: 'polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%)'
+                  }}
+                >
+                  <Link href="https://portfolio-uyt7.vercel.app/" target="_blank" rel="noopener noreferrer">
+                    <ExternalLink className="mr-2 h-5 w-5 animate-bounce" />
+                    마름
+                  </Link>
+                </Button>
+
+
+                  <Button
+                  asChild
+                  size="lg"
+                  className="w-full bg-gradient-to-tr from-blue-400 via-blue-600 to-blue-700 text-white font-bold shadow-lg hover:scale-105 hover:shadow-2xl transition-all duration-300 rounded-xl"
+                >
+                  <Link href="https://portfolio-uyt7.vercel.app/" target="_blank" rel="noopener noreferrer">
+                    <ExternalLink className="mr-2 h-5 w-5 animate-bounce" />
+                    중앙 그라
+                  </Link>
+                </Button>
+
+                  <Button
+                asChild
+                size="lg"
+                className="w-full py-4 bg-blue-600 text-white font-bold shadow-lg rounded-2xl border-2 border-blue-400 hover:bg-blue-700 hover:shadow-2xl transition-all duration-300"
+              >
+                <Link href="https://portfolio-uyt7.vercel.app/" target="_blank" rel="noopener noreferrer">
+                  <ExternalLink className="mr-2 h-5 w-5 animate-pulse" />
+                  입
+                </Link>
+              </Button>
+
+
+                  <Button
+                    asChild
+                    size="lg"
+                    className="text-white font-bold shadow-lg hover:scale-105 hover:shadow-2xl transition-all duration-300"
+                    style={{
+                      background: 'linear-gradient(45deg, #3b82f6, #2563eb, #1e40af)',
+                      clipPath: 'polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%)',
+                      padding: '1rem 2rem'
+                    }}
+                  >
+                    <Link
+                      href="https://portfolio-uyt7.vercel.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center"
+                    >
+                      <ExternalLink className="mr-2 h-5 w-5 animate-bounce" />
+                      쨤봉
+                    </Link>
+                  </Button>
+
+
+
                 </div>
               </CardHeader>
               <CardContent>
