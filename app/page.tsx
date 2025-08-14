@@ -614,17 +614,6 @@ export default function Resume() {
                   </Link>
                 </Button>
               </div>
-
-
-                <div className="absolute top-0 right-0 overflow-hidden">
-                <div className="bg-primary text-white text-xs font-bold px-4 py-1 transform rotate-45 translate-x-10 translate-y-4 shadow-md">
-                  포트폴리오
-                </div>
-              </div>
-
-
-
-                
               </CardHeader>
               <CardContent>
                 <ul className="ml-6 list-disc space-y-2 text-sm text-muted-foreground">
