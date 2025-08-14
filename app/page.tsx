@@ -192,7 +192,7 @@ export default function Resume() {
               </Button>
               <Button asChild variant="outline" size="sm">
               <Link href="https://portfolio-uyt7.vercel.app/" target="_blank" rel="noopener noreferrer">
-                <ExternalLink className="mr-2 h-4 w-4" />
+                <ExternalLink className="mr-2 h-4 w-4 animate-bounce" />
                 포트폴리오
               </Link>
             </Button>
