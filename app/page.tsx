@@ -190,6 +190,12 @@ export default function Resume() {
                   Blog
                 </Link>
               </Button>
+              <Button asChild variant="outline" size="sm">
+              <Link href="https://portfolio-uyt7.vercel.app/" target="_blank" rel="noopener noreferrer">
+                <ExternalLink className="mr-2 h-4 w-4" />
+                포트폴리오
+              </Link>
+            </Button>
             </div>
           </div>
           <div className="relative aspect-square overflow-hidden rounded-full border md:h-[300px] md:w-[300px]">
@@ -604,6 +610,61 @@ export default function Resume() {
                     </Link>
                   </Button>
                 </div>
+                
+                <div className="w-full mt-4">
+                <Button
+                  asChild
+                  size="lg"
+                  className="w-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-white font-bold shadow-lg hover:scale-[1.02] hover:shadow-xl transition-all duration-300"
+                >
+                  <Link href="https://portfolio-uyt7.vercel.app/" target="_blank" rel="noopener noreferrer">
+                    <ExternalLink className="mr-2 h-5 w-5 animate-bounce" />
+                    제 포트폴리오 전체 보기
+                  </Link>
+                </Button>
+              </div>
+
+                <div className="relative group">
+                <img 
+                  src="/portfolio-preview.png" 
+                  alt="포트폴리오 미리보기" 
+                  className="rounded-lg shadow-md group-hover:opacity-80 transition"
+                />
+                <Link
+                  href="https://portfolio-uyt7.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition"
+                >
+                  <Button size="lg" className="bg-white text-black font-bold">
+                    <ExternalLink className="mr-2 h-5 w-5" /> 포트폴리오 바로가기
+                  </Button>
+                </Link>
+              </div>
+
+
+                <div className="absolute top-0 right-0 overflow-hidden">
+  <div className="bg-primary text-white text-xs font-bold px-4 py-1 transform rotate-45 translate-x-10 translate-y-4 shadow-md">
+    포트폴리오
+  </div>
+</div>
+
+
+                <div className="fixed bottom-8 right-8 z-50">
+  <Button 
+    asChild 
+    size="lg" 
+    className="bg-primary text-white rounded-full shadow-lg hover:scale-110 transition-transform"
+  >
+    <Link href="https://portfolio-uyt7.vercel.app/" target="_blank" rel="noopener noreferrer">
+      <ExternalLink className="mr-2 h-5 w-5" /> 포트폴리오
+    </Link>
+  </Button>
+</div>
+
+
+
+                
               </CardHeader>
               <CardContent>
                 <ul className="ml-6 list-disc space-y-2 text-sm text-muted-foreground">
