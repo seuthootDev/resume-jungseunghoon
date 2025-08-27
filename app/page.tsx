@@ -190,7 +190,11 @@ export default function Resume() {
                   Blog
                 </Link>
               </Button>
-              <Button asChild variant="outline" size="sm">
+              <Button
+                  asChild
+                  size="lg"
+                  className="w-1/5 bg-gradient-to-r from-blue-500 via-blue-600 to-indigo-600 text-white font-bold shadow-lg hover:scale-[1.02] hover:shadow-xl transition-all duration-300"
+                >
               <Link href="https://portfolio-uyt7.vercel.app/" target="_blank" rel="noopener noreferrer">
                 <ExternalLink className="mr-2 h-4 w-4 animate-bounce" />
                 포트폴리오
