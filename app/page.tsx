@@ -192,7 +192,7 @@ export default function Resume() {
               </Button>
               <Button
                   asChild
-                  size="lg"
+                  size="sm"
                   className="w-1/5 bg-gradient-to-r from-blue-500 via-blue-600 to-indigo-600 text-white font-bold shadow-lg hover:scale-[1.02] hover:shadow-xl transition-all duration-300"
                 >
               <Link href="https://portfolio-uyt7.vercel.app/" target="_blank" rel="noopener noreferrer">
