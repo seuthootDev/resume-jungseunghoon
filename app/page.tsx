@@ -804,7 +804,7 @@ export default function Resume() {
                 <CardDescription>대한적십자사혈액관리본부</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground">68회 / 272시간</p>
+                <p className="text-sm text-muted-foreground">71회 / 284시간</p>
               </CardContent>
             </Card>
             <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
