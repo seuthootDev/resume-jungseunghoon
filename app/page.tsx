@@ -748,8 +748,7 @@ export default function Resume() {
                   <li>TDD와 클린 아키텍처 기반 서버 구축
                     <ul className="ml-6 list-disc space-y-1 mt-1">
                       <li>대기업 시나리오를 바탕으로 TDD, 클린 아키텍처를 적용한 견고하고 유연한 서버 구축</li>
-                      <li>Spring, NestJS, Thymeleaf 등을 활용하여 실제 서비스 개발</li>
-                      <li>개인 과제 수행 후 팀 리뷰를 통해 설계 및 코드 개선</li>
+                      <li>개인 과제 수행 후 팀 리뷰를 통해 설계 및 코드 개선 (NestJS)</li>
                     </ul>
                   </li>
                   <li>대용량 트래픽과 데이터 처리
