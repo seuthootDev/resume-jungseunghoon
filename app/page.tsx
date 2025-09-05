@@ -624,16 +624,15 @@ export default function Resume() {
                   <li>PyQt와 VTK를 활용한 데스크톱 기반 CFD 센서 배치 최적화 프로그램 개발</li>
                   <li>데스크톱 애플리케이션의 웹 버전 개발:
                     <ul className="ml-6 list-disc space-y-1 mt-1">
-                      <li>React + Vite를 활용한 메인 프론트엔드 개발</li>
-                      <li>VTK.js를 활용한 3D 시각화 모듈 구현</li>
-                      <li>FastAPI 기반 백엔드 서버 구축</li>
-                      <li>MongoDB를 활용한 데이터 저장 및 관리</li>
-                      <li>Docker를 활용한 마이크로서비스 아키텍처 구현 및 컨테이너화</li>
+                      <li>React + Vite를 활용한 프론트엔드 개발</li>
+                      <li>VTK.js 기반 3D 시각화 모듈 구현</li>
+                      <li>FastAPI를 활용한 백엔드 서버 구축</li>
+                      <li>GitLab CI/CD를 통한 자동 배포 파이프라인 구축</li>
                     </ul>
                   </li>
                   <li>Chama 라이브러리를 활용한 센서 최적화 모델 개발 및 구현</li>
                   <li>FORTRAN으로 작성된 SLAB 유체 확산 모델을 Python으로 마이그레이션 및 현대화</li>
-                  <li>Camunda를 활용한 워크플로우 자동화 시스템 구현</li>
+                  <li>n8n을 활용한 워크플로우 자동화 시스템 구현</li>
                 </ul>
 
                 {/* 프로젝트 세부 내용 - 아코디언 형식 */}
