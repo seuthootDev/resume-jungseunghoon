@@ -744,26 +744,42 @@ export default function Resume() {
                 </div>
               </CardHeader>
               <CardContent>
-                <ul className="ml-6 list-disc space-y-2 text-sm text-muted-foreground">
+              <div className="flex flex-col sm:flex-row gap-4">
+                {/* 목록 */}
+                <ul className="ml-6 list-disc space-y-2 text-sm text-muted-foreground flex-1">
                   <li>TDD와 클린 아키텍처 기반 서버 구축
                     <ul className="ml-6 list-disc space-y-1 mt-1">
-                      <li>대기업 시나리오를 바탕으로 TDD, 클린 아키텍처를 적용한 견고하고 유연한 서버 구축</li>
-                      <li>개인 과제 수행 후 팀 리뷰를 통해 설계 및 코드 개선 (NestJS)</li>
+                      <li>대기업 시나리오 적용</li>
+                      <li>개인 과제 후 팀 리뷰</li>
                     </ul>
                   </li>
                   <li>대용량 트래픽과 데이터 처리
                     <ul className="ml-6 list-disc space-y-1 mt-1">
-                      <li>대량의 트래픽을 처리하기 위한 다양한 전략 학습</li>
-                      <li>Redis를 활용한 재고 처리, Kafka를 이용한 대용량 트래픽 제어 등 현업 사례 적용</li>
+                      <li>Redis/Kafka 활용</li>
                     </ul>
                   </li>
                   <li>장애 대응 훈련
                     <ul className="ml-6 list-disc space-y-1 mt-1">
-                      <li>실전과 유사한 장애 대응 훈련을 통해 고가용성 설계 및 문제 해결 능력 배양</li>
+                      <li>고가용성 설계 및 문제 해결 능력 배양</li>
                     </ul>
                   </li>
                 </ul>
-              </CardContent>
+
+                {/* 이미지 */}
+                <a href="/항해 플러스 수료 인증서.png" target="_blank" rel="noopener noreferrer">
+                  <img 
+                    src="/항해 플러스 수료 인증서.png" 
+                    alt="NestJS" 
+                    style={{ 
+                      width: '200px', 
+                      height: 'auto', 
+                      border: '2px solid #ccc', 
+                      borderRadius: '12px' 
+                    }} 
+                  />
+                </a>
+              </div>
+            </CardContent>
             </Card>
 
               <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
