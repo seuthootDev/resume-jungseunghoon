@@ -774,7 +774,8 @@ export default function Resume() {
                       width: '200px', 
                       height: 'auto', 
                       border: '2px solid #ccc', 
-                      borderRadius: '12px' 
+                      borderRadius: '12px',
+                      magin: '2px'
                     }} 
                   />
                 </a>
