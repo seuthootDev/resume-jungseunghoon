@@ -110,26 +110,3 @@ nextjs-resume/
 │   └── globals.css         # 글로벌 스타일
 └── public/                 # 정적 파일
 ```
-
-## 배포
-
-### Vercel (권장)
-
-```bash
-npm install -g vercel
-vercel
-```
-
-### 기타 플랫폼
-
-- Netlify
-- AWS Amplify
-- GitHub Pages (정적 export 필요)
-
-## 라이선스
-
-MIT License
-
-## 문의
-
-이슈나 개선사항이 있으시면 GitHub Issues를 이용해주세요.
