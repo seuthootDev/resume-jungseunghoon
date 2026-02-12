@@ -24,7 +24,7 @@ export default function Projects() {
             <span className={styles.label}>Portfolio</span>
             <h2 className={styles.title}>포트폴리오</h2>
             <p className={styles.description}>
-              프로젝트와 상세 경력을 포트폴리오 사이트에서 확인하실 수 있습니다.
+              프로젝트 관련 상세한 내용은 포트폴리오 사이트에서 확인하실 수 있습니다.
             </p>
           </div>
 
