@@ -1,14 +1,20 @@
 import { NextRequest, NextResponse } from 'next/server'
+import { getJusoConfirmKey } from '@/lib/juso-env'
 
 export const dynamic = 'force-dynamic'
+export const runtime = 'nodejs'
 
 const JUSO_ENG_ENDPOINT = 'https://business.juso.go.kr/addrlink/addrEngApi.do'
+
+/** 확장과 동일 경로에서 env·배포 일치 여부만 확인 (Juso 호출 없음) */
+const HEALTH_KEYWORD = '__proxy_health__'
 
 function corsHeaders(): HeadersInit {
   return {
     'Access-Control-Allow-Origin': '*',
     'Access-Control-Allow-Methods': 'GET, OPTIONS',
     'Access-Control-Allow-Headers': 'x-juso-proxy-secret, Content-Type',
+    'Cache-Control': 'no-store, max-age=0, must-revalidate',
   }
 }
 
@@ -16,8 +22,14 @@ export async function OPTIONS() {
   return new NextResponse(null, { status: 204, headers: corsHeaders() })
 }
 
+function getJusoProxySecret(): string | undefined {
+  const name = ['JUSO', 'PROXY', 'SECRET'].join('_')
+  const v = (process.env as Record<string, string | undefined>)[name]
+  return typeof v === 'string' && v.trim() ? v.trim() : undefined
+}
+
 export async function GET(request: NextRequest) {
-  const proxySecret = process.env.JUSO_PROXY_SECRET
+  const proxySecret = getJusoProxySecret()
   if (proxySecret) {
     const sent = request.headers.get('x-juso-proxy-secret')
     if (sent !== proxySecret) {
@@ -42,10 +54,36 @@ export async function GET(request: NextRequest) {
     )
   }
 
-  const confmKey = process.env.JUSO_CONFIRM_KEY
-  if (!confmKey) {
+  if (keyword === HEALTH_KEYWORD) {
+    const key = getJusoConfirmKey()
     return NextResponse.json(
-      { error: 'Server misconfigured' },
+      {
+        ok: true,
+        via: 'eng-route',
+        jusoConfirmKeyConfigured: Boolean(key),
+        keyCharLength: key.length,
+        vercelEnv: process.env.VERCEL_ENV ?? null,
+      },
+      { headers: corsHeaders() }
+    )
+  }
+
+  if (process.env.NODE_ENV === 'development') {
+    console.log('[api/juso/eng]', {
+      hasKeyword: true,
+      JUSO_CONFIRM_KEY: getJusoConfirmKey() ? 'set' : 'MISSING',
+    })
+  }
+
+  const confmKey = getJusoConfirmKey()
+  if (!confmKey) {
+    console.error('[api/juso/eng] JUSO_CONFIRM_KEY missing (runtime)')
+    const error =
+      process.env.NODE_ENV === 'development'
+        ? 'Server misconfigured: JUSO_CONFIRM_KEY is missing (create .env.local — see .env.example)'
+        : 'Server misconfigured'
+    return NextResponse.json(
+      { error, code: 'JUSO_KEY_MISSING' },
       { status: 500, headers: corsHeaders() }
     )
   }
